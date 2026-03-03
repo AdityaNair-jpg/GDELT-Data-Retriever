@@ -6,6 +6,9 @@ This repository provides a collection of Python scripts designed to interface wi
 
 The GDELT Project monitors the world's broadcast, print, and web news in over 100 languages. This repository simplifies the process of accessing that data, offering scripts that range from simple API queries to complex data processing of the latest GKG updates.
 
+### Example Visualized data
+<img width="2057" height="1230" alt="image" src="https://github.com/user-attachments/assets/eda32b19-c51f-44b1-abb0-a2e2a083a46b" />
+
 ## File Descriptions
 
 ### 1. `latest.py`
@@ -25,9 +28,6 @@ An advanced version of the news retriever with built-in error handling.
 * **Functionality**: Similar to `news.py`, but includes a robust `gdelt_doc_collector` function.
 * **Resiliency**: Features a retry mechanism (up to 3 attempts) and timeout handling to manage network instability or API delays.
 * **Customization**: Pre-configured for specific topic filtering, such as searching for multiple related keywords (e.g., `"Elon Musk" Tesla`).
-
-### Example Visualized data
-<img width="2057" height="1230" alt="image" src="https://github.com/user-attachments/assets/eda32b19-c51f-44b1-abb0-a2e2a083a46b" />
 
 ## Requirements
 
