@@ -31,8 +31,7 @@ def gdelt_doc_collector(query, max_records=250):
                 return pd.DataFrame(data['articles'])
             else:
                 print("No articles found for this query.")
-                return None
-                
+                return None                
         except (requests.exceptions.ConnectTimeout, requests.exceptions.ReadTimeout):
             print(f"Timeout on attempt {attempt + 1}. Retrying...")
             time.sleep(2)
